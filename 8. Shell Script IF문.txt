@@ -1,0 +1,12 @@
+<Sehll Script IF문>
+
+1. if문
+    ex)
+        if [조건]; then
+            명령문
+        elif [조건]; then
+            명령문
+        else
+            명령문
+        fi
+    
