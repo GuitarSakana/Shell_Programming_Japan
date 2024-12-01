@@ -1,0 +1,37 @@
+<Shell Script 비교 연산자>
+
+1. 비교 연산
+    - 파일과 디렉토리 유무 판단
+    - 문자열 비교
+    - 숫자 비교
+
+
+2. 사용
+    test -f 파일이름      : 파일이 존재하는지 확인 참이면 0
+    test -d 디렉토리 이름  : 디렉토리가 존재하는지 확인 참이면 0
+
+    ex)
+    if[-f $filename]; then
+        ls -l $filename
+    elif [-d %filename]; then
+        ls -ld $filename
+    else
+        echo "not found file"
+
+
+3. 문자열 비교
+    문자열1 = 문자열2    <- 같으면 참
+    문자열1 != 문자열2   <- 다르면 참
+    -n 문자열           <- 문자열 길이가 0이 아니면 참 
+    -z 문자열           <- 문자열 길이가 0이면 참
+
+
+4. 숫자 비교
+    value1 -eq value2       1과2가 같으면 참
+    value1 -ne value2       1과2가 다르면 참
+    value1 -ge value2       1이2보다 크거나 같으면 참
+    value1 -gt value2       1이2보다 크면 참
+    value1 -le value2       1이2보다 작거나 같으면 참
+    value1 -lt value2       1이2보다 작으면 참
+
+
