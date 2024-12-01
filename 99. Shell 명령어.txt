@@ -56,4 +56,13 @@
         declare -x 변수  <- 환경 변수
         declare -r 변수  <- 읽기 전용 변수
 
-17. 
+17. touch
+    새로운 파일을 생성하거나
+    파일의 시간 정보를 변경한다. (파일의 접근시간, 수정시간을 현재 시간으로 업데이트한다)
+    ex)
+        touch newfile.txt
+        touch newfile1.txt newfile2.txt newfile3.txt
+        touch -t 202411311010 newfile1.txt          <- newfile1.txt파일을 2024년11월31일10시10분으로 시간 변경
+        touch -r refer.txt target.txt       <- refer파일에 시간정보를 target파일에 덮어씀
+
+18. 
