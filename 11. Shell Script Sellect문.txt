@@ -1,0 +1,41 @@
+<Shell Script Select문>
+
+1. Select문
+    메뉴기반의 스크립트를 만들고자 할때 사용
+    보통 case문과 결합해서 사용
+
+    ex)
+        select 변수 in 리스트
+        do
+            case $변수 in
+                패턴1)
+                    명령문;;
+                    ...
+                패턴2)
+                    명령문;;
+                    ...
+                esac
+        done
+
+    ========================================
+        -> hostname, ifconfig, ps, df, quit 이 정보들이 메뉴화 되어 번호 순으로 나옴.
+
+        select CMD in hostname ifconfig ps df quit
+        do
+            case $변수 in
+                hostname)
+                    명령문;;
+                    ...
+                ifconfig)
+                    명령문;;
+                    ...
+                ps)
+                    명령문;;
+                    ...
+                df)
+                    명령문;;
+                    ...
+                quit)
+                    break;;  
+                esac
+        done

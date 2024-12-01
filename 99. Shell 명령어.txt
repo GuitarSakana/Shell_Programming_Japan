@@ -65,4 +65,7 @@
         touch -t 202411311010 newfile1.txt          <- newfile1.txt파일을 2024년11월31일10시10분으로 시간 변경
         touch -r refer.txt target.txt       <- refer파일에 시간정보를 target파일에 덮어씀
 
-18. 
+18. ps -ef
+    실행중인 모든 프로세스의 상세정보를 출력(background, forground 정보 전부 다)
+
+19. 

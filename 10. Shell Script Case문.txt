@@ -4,10 +4,11 @@
     보통 문자열 비교후 조건에 만족되면 명령문을 실행하는 스크립트를 짤때 사용
     비교 대상의 문자열은 위치파라미터를 통해 또는 변수등을 통해 값을 받을 수도 있음
     배치 파일을 호출할때 인자값도 같이 넣어준다
-    
+
+    - break;;를 걸어서 case문을 빠져나올수 있다
     - bash CaseTest.sh start
     ex)
-        case 단어 또는 변수 in 인자값
+        case 단어 또는 변수 in 
         패턴1)
             명령문;;
             ....
@@ -18,7 +19,7 @@
         esac
 
 
-        case $1 in start
+        case $1 in 
         start)
             echo 'apapche httpd started.';;
         restart)
